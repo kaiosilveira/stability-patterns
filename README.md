@@ -4,9 +4,9 @@ When it comes to software engineering, production is a dangerous place for your 
 
 ## Stability patterns catalog
 
-[Timeouts](./nodejs-timeouts): Timeouts are a great way of avoiding slow responses and cascading failures, they help protecting our systems of hanging indefinitely while waiting for a response that might never come.
+[Timeouts](https://github.com/kaiosilveira/nodejs-timeouts): Timeouts are a great way of avoiding slow responses and cascading failures, they help protecting our systems of hanging indefinitely while waiting for a response that might never come.
 
-[Circuit breaker](./nodejs-circuit-breaker): A circuit breaker in software engineering mimics the original mechanism used in electric engineering to protect circuits of burning down completely in case of failure. Circuit breaker protects your application of performing calls that would probably fail anyway by not executing them in the first place. It contains three states:
+[Circuit breaker](https://github.com/kaiosilveira/nodejs-circuit-breaker): A circuit breaker in software engineering mimics the original mechanism used in electric engineering to protect circuits of burning down completely in case of failure. Circuit breaker protects your application of performing calls that would probably fail anyway by not executing them in the first place. It contains three states:
 
 - `Closed`: Requests flow normally though
 - `Open`: Requests do not flow through and operation is refused
