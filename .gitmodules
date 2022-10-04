@@ -1,0 +1,6 @@
+[submodule "nodejs-timeouts"]
+	path = nodejs-timeouts
+	url = https://github.com/kaiosilveira/nodejs-timeouts.git
+[submodule "nodejs-circuit-breaker"]
+	path = nodejs-circuit-breaker
+	url = https://github.com/kaiosilveira/nodejs-circuit-breaker.git
