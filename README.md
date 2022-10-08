@@ -2,7 +2,11 @@
 
 When it comes to software engineering, production is a dangerous place for your newborn system to be in. As soon as you do the first release, your system becomes a possible victim of all kinds of failures, internal and external to it, and there is a good chance that all hell will break loose, sometimes even multiple times in a single day. That's why in this series I'll be implementing, documenting and talking about some of the most common stability patterns, using Nygard's book "Release it!" as a standard reference.
 
-## Stability patterns catalog
+## Technical details
+
+All patterns are implemented with Typescript, using NodeJS and a thin layer of Express. Some sample projects for the patterns were forked from our public [nodejs-ts-express-template](https://github.com/unicornlauncher/nodejs-ts-express-template), which already implements some of the patterns being discussed, which is the case for the Handshaking Pattern, for instance. Unit tests were implemented using `jest` and the continuous integration pipeline is implemented using GitHub Actions.
+
+## The stability patterns catalog
 
 [Timeouts](https://github.com/kaiosilveira/nodejs-timeouts): Timeouts are a great way of avoiding slow responses and cascading failures, they help protect our systems from hanging indefinitely while waiting for a response that might never come.
 
