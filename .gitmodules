@@ -4,3 +4,6 @@
 [submodule "nodejs-circuit-breaker"]
 	path = nodejs-circuit-breaker
 	url = https://github.com/kaiosilveira/nodejs-circuit-breaker.git
+[submodule "nodejs-fail-fast"]
+	path = nodejs-fail-fast
+	url = https://github.com/kaiosilveira/nodejs-fail-fast.git
