@@ -8,6 +8,8 @@ When it comes to software engineering, production is a dangerous place for your 
 
 [Fail fast](https://github.com/kaiosilveira/nodejs-fail-fast): Software systems eventually fail. They fail because of many reasons, but especially because of malformed inputs. In such cases, it's always better to _fail fast_, i.e., before compromising a lot of expensive resources in an optimistic attempt to execute an operation just to fail miserably later, making clients wait for much more time than they should.
 
+[Handshaking](https://github.com/kaiosilveira/nodejs-handshaking): In **TCP**, to establish a connection, the client and the server should agree on the health of each other. This agreement is performed via a process called _handshake_. This pattern brings some perspective on how to mimic this approach when using HTTP.
+
 [Circuit breaker](https://github.com/kaiosilveira/nodejs-circuit-breaker): A circuit breaker in software engineering mimics the original mechanism used in electric engineering to protect circuits from burning down completely in case of failure. Circuit breaker protects your application of performing calls that would probably fail anyway by not executing them in the first place. It contains three states:
 
 - `CLOSED`: Requests flow normally through

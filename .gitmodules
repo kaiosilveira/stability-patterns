@@ -7,3 +7,6 @@
 [submodule "nodejs-fail-fast"]
 	path = nodejs-fail-fast
 	url = https://github.com/kaiosilveira/nodejs-fail-fast.git
+[submodule "nodejs-handshaking"]
+	path = nodejs-handshaking
+	url = https://github.com/kaiosilveira/nodejs-handshaking.git
