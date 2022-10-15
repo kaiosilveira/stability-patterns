@@ -14,14 +14,16 @@ The roadmap for this project is publicly visible in the [Stability Patterns Road
 
 ## The stability patterns catalog
 
-[Timeouts](https://github.com/kaiosilveira/nodejs-timeouts): Timeouts are a great way of avoiding slow responses and cascading failures, they help protect our systems from hanging indefinitely while waiting for a response that might never come.
-
-[Fail fast](https://github.com/kaiosilveira/nodejs-fail-fast): Software systems eventually fail. They fail because of many reasons, but especially because of malformed inputs. In such cases, it's always better to _fail fast_, i.e., before compromising a lot of expensive resources in an optimistic attempt to execute an operation just to fail miserably later, making clients wait for much more time than they should.
-
-[Handshaking](https://github.com/kaiosilveira/nodejs-handshaking): In **TCP**, to establish a connection, the client and the server should agree on the health of each other. This agreement is performed via a process called _handshake_. This pattern brings some perspective on how to mimic this approach when using HTTP.
-
 [Circuit breaker](https://github.com/kaiosilveira/nodejs-circuit-breaker): A circuit breaker in software engineering mimics the original mechanism used in electric engineering to protect circuits from burning down completely in case of failure. Circuit breaker protects your application of performing calls that would probably fail anyway by not executing them in the first place. It contains three states:
 
 - `CLOSED`: Requests flow normally through
 - `OPEN`: Requests do not flow through and the operation is refused
 - `HALF_OPEN`: Next request is evaluated by the circuit breaker code, if it succeeds, the circuit state is changed to `CLOSED`, otherwise, it goes back to `OPEN`
+
+[Let it crash](https://github.com/kaiosilveira/nodejs-let-it-crash): We start to understand production when we decide to give up of component-level stability in favor of system-level stability. This means that, sometimes, it's just better to let a component crash miserably and recreate it from scratch than trying to keep it alive at all costs.
+
+[Timeouts](https://github.com/kaiosilveira/nodejs-timeouts): Timeouts are a great way of avoiding slow responses and cascading failures, they help protect our systems from hanging indefinitely while waiting for a response that might never come.
+
+[Fail fast](https://github.com/kaiosilveira/nodejs-fail-fast): Software systems eventually fail. They fail because of many reasons, but especially because of malformed inputs. In such cases, it's always better to _fail fast_, i.e., before compromising a lot of expensive resources in an optimistic attempt to execute an operation just to fail miserably later, making clients wait for much more time than they should.
+
+[Handshaking](https://github.com/kaiosilveira/nodejs-handshaking): In **TCP**, to establish a connection, the client and the server should agree on the health of each other. This agreement is performed via a process called _handshake_. This pattern brings some perspective on how to mimic this approach when using HTTP.
