@@ -10,3 +10,6 @@
 [submodule "nodejs-handshaking"]
 	path = nodejs-handshaking
 	url = https://github.com/kaiosilveira/nodejs-handshaking.git
+[submodule "nodejs-let-it-crash"]
+	path = nodejs-let-it-crash
+	url = https://github.com/kaiosilveira/nodejs-let-it-crash
